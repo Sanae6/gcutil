@@ -3146,7 +3146,7 @@ EXTERN_C_BEGIN
     || defined(IRIX5) || defined(LINUX) || defined(NETBSD) \
     || defined(OPENBSD) || defined(SOLARIS) \
     || ((defined(CYGWIN32) || defined(USE_MMAP) || defined(USE_MUNMAP)) \
-        && !defined(USE_WINALLOC))
+        && !defined(USE_WINALLOC) && !defined(SWITCH))
   /* Try both sbrk and mmap, in that order.     */
 # define MMAP_SUPPORTED
 #endif

@@ -323,7 +323,7 @@ GC_INNER void GC_with_callee_saves_pushed(void (*fn)(ptr_t, void *),
         }
 #       if defined(MSWIN32) || defined(MSWINCE) || defined(UTS4) \
            || defined(OS2) || defined(CX_UX) || defined(__CC_ARM) \
-           || defined(LINUX) || defined(EWS4800) || defined(RTEMS)
+           || defined(LINUX) || defined(EWS4800) || defined(RTEMS) || defined(SWITCH)
           (void) setjmp(regs);
 #       else
           (void) _setjmp(regs);
